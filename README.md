@@ -1,4 +1,18 @@
-# PlayGround
+# Little Fern Farm
+
+A cozy, playable pocket-farm game in your browser. Tend a tiny 3×3 garden, collect seasonal crops, sell your harvest, and watch the valley change through spring, summer, autumn, and winter. Your progress saves automatically in this browser.
+
+## Play
+
+Open `index.html` in a modern browser. Choose a tool, then tap/click a garden bed:
+
+- **Plant** — sow a seed from your pouch in an empty bed.
+- **Water** — water a planted crop once each day. Crops only grow after you water them.
+- **Harvest** — pick ripe crops after three watered nights.
+- **Sell harvest** — turn your basket into gold, then buy more seeds at the seed stand.
+- **End the day** — restore your energy and advance the calendar. Seasons change every seven days; out-of-season crops wilt.
+
+The game is responsive and supports mouse and touch. No install or build step required.
 
 <!-- omgithub:readme:start -->
 ## 🚀 Build, play, and remix with OMGithub

@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="theme-color" content="#f6f2e5">
+<title>Little Fern Farm — a pocket valley</title><link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet"><link rel="stylesheet" href="style.css">
+</head>
+<body><main class="shell">
+<header class="topbar"><div class="brand"><div class="brand-icon">🌱</div><div><h1>Little Fern Farm</h1><p>A tiny valley, all your own</p></div></div><div class="save-pill"><span class="save-dot"></span> YOUR POCKET FARM</div></header>
+<section class="game" aria-label="Little Fern Farm game">
+<div class="world"><div class="scene-top"><div class="season"><div class="season-icon" id="seasonIcon">🌷</div><div><strong id="seasonName">Spring</strong><small id="dayLabel">Day 1 · Year 1</small></div></div><div class="weather"><span id="weatherIcon">☀️</span><span id="weatherLabel">Sunny day</span></div></div>
+<div class="scene-wrap"><canvas id="scene" aria-label="Farm scene. Click a plot to use your selected tool." role="img"></canvas><div class="scene-caption"><span>FERN HOLLOW</span><span>↟ 2:14 PM</span></div></div>
+<div class="scene-footer"><span>✦ <b id="goalText">Your first little harvest is waiting.</b></span><span id="staminaText">☀ 6 / 6</span></div></div>
+<aside class="panel"><div class="wallet-row"><div><small>YOUR WALLET</small><strong>🪙 <span id="gold">42</span> <em>g</em></strong></div><button class="sound" id="soundBtn" aria-label="Toggle sound">♪</button></div>
+<div class="divider"></div><div class="section-title"><h2>Today’s tools</h2><span class="hint">PICK ONE</span></div><div class="tools" role="group" aria-label="Choose a tool">
+<button class="tool active" data-tool="plant"><span>🌰</span><b>Plant</b><small>Seed</small></button><button class="tool" data-tool="water"><span>💧</span><b>Water</b><small>Grow</small></button><button class="tool" data-tool="harvest"><span>🧺</span><b>Harvest</b><small>Pick</small></button></div>
+<div class="seed-row"><label for="cropSelect">SEED POUCH</label><select id="cropSelect" aria-label="Choose a seed"><option value="turnip">🌷 Turnip seed · 22g</option></select></div>
+<div class="inventory"><div class="inv-title"><h2>In your basket</h2><span id="basketCount">0 items</span></div><div id="basket" class="basket"><span class="empty-basket">A little harvest goes here.</span></div><button id="sellBtn" class="sell-btn" disabled>Sell harvest <span>→</span></button></div>
+<div class="shop"><div><b>Seed stand</b><small id="shopCopy">A fresh pouch of turnips</small></div><button id="buyBtn" class="buy-btn">Buy seeds <span id="seedPrice">12g</span></button></div>
+<button id="sleepBtn" class="sleep-btn"><span>🌙</span><span><b>End the day</b><small>Rest & let crops grow</small></span><span class="arrow">→</span></button>
+<div class="tip" id="tip"><span>💡</span><span>Choose <b>Plant</b>, then tap an empty garden bed.</span></div></aside></section>
+<footer class="footer"><span>Made for slow mornings & small beginnings.</span><span>WASD not required · just tap a plot</span></footer>
+</main><div id="toast" class="toast" role="status" aria-live="polite"></div><script src="game.js"></script></body></html>
